@@ -11,6 +11,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -42,7 +43,7 @@ fun OnBoardingScreen() {
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 Text(
-                    text = "Skip",
+                    text = stringResource(R.string.skip),
                     textAlign = TextAlign.End,
                     color = Color.White
                 )
@@ -61,7 +62,7 @@ fun OnBoardingScreen() {
                 )
 
                 Text(
-                    text = "perplexity",
+                    text = stringResource(R.string.app_name_lower_case),
                     style = MaterialTheme.typography.headlineLarge,
                     color = Color.White
                 )
@@ -83,7 +84,7 @@ fun OnBoardingScreen() {
                 )
                 Spacer(modifier = Modifier.width(4.dp))
                 Text(
-                    text = "Continue with Google",
+                    text = stringResource(R.string.continue_with_google),
                     color = Color.Black
                 )
             }
@@ -98,7 +99,7 @@ fun OnBoardingScreen() {
                     contentColor = Color.White
                 )
             ) {
-                Text(text = "Continue with email")
+                Text(text = stringResource(R.string.continue_with_email))
             }
 
             Spacer(modifier = Modifier.height(16.dp))
@@ -110,8 +111,8 @@ fun OnBoardingScreen() {
                 horizontalArrangement = Arrangement.SpaceBetween,
                 verticalAlignment = Alignment.Bottom
             ) {
-                Text(text = "Privacy policy", color = Color.White)
-                Text(text = "Terms of service", color = Color.White)
+                Text(text = stringResource(R.string.privacy_policy), color = Color.White)
+                Text(text = stringResource(R.string.terms_of_service), color = Color.White)
             }
         }
     }

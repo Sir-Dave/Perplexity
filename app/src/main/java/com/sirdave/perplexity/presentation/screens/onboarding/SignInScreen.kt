@@ -6,10 +6,12 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.sirdave.perplexity.R
 import com.sirdave.perplexity.ui.theme.DarkGreen
 
 @Composable
@@ -29,7 +31,7 @@ fun SignInScreen(){
             horizontalAlignment = Alignment.CenterHorizontally
         ){
             Text(
-                text = "Continue with email",
+                text = stringResource(R.string.continue_with_email),
                 fontSize = 21.sp,
                 fontWeight = FontWeight.Light
             )
@@ -37,8 +39,8 @@ fun SignInScreen(){
             OutlinedTextField(
                 value = email,
                 onValueChange = { email = it },
-                label = { Text(text = "Email") },
-                placeholder = { Text(text = "Email") },
+                label = { Text(text = stringResource(R.string.email)) },
+                placeholder = { Text(text = stringResource(R.string.email)) },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 16.dp)
@@ -56,7 +58,7 @@ fun SignInScreen(){
             ),
             enabled = email.isNotBlank()
         ) {
-            Text(text = "Continue")
+            Text(text = stringResource(R.string.text_continue))
         }
     }
 }

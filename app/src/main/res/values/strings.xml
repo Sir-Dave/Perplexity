@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Perplexity</string>
+    <string name="app_name_lower_case">perplexity</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="terms_of_service">Terms of service</string>
+    <string name="continue_with_email">Continue with email</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="skip">Skip</string>
+    <string name="email">Email</string>
+    <string name="text_continue">Continue</string>
+    <string name="check_email">Check your email</string>
+    <string name="sign_in_link_desc">A sign in link has been sent to your email address</string>
+    <string name="create_your_accout">Create your account</string>
+    <string name="username">Username</string>
+    <string name="restore">Restore</string>
+    <string name="app_description">Unlock the most powerful AI research assistant</string>
+    <string name="describe">Subscribe</string>
+    <string name="subscription_cancel_detail">The subscription will automatically renew unless it is canceled at least 24 hours before the end of the current period.</string>
+
 </resources>
