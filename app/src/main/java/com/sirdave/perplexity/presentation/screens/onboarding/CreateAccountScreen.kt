@@ -25,7 +25,7 @@ import com.sirdave.perplexity.ui.theme.DarkGreen
 import com.sirdave.perplexity.ui.theme.LightBackground
 
 @Composable
-fun CreateAccountScreen(){
+fun CreateAccountScreen(onContinueClick: () -> Unit){
     var username by remember { mutableStateOf("") }
 
     Column(
@@ -72,7 +72,7 @@ fun CreateAccountScreen(){
         }
 
         Button(
-            onClick = { },
+            onClick = { onContinueClick() },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
@@ -90,5 +90,7 @@ fun CreateAccountScreen(){
 @Composable
 @Preview(name = "Create Account", showBackground = true)
 fun CreateAccountPreview(){
-    CreateAccountScreen()
+    CreateAccountScreen{
+
+    }
 }

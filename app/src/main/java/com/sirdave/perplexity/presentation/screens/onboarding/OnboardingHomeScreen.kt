@@ -18,7 +18,7 @@ import androidx.compose.ui.unit.dp
 import com.sirdave.perplexity.R
 
 @Composable
-fun OnBoardingScreen() {
+fun OnBoardingHomeScreen(onNavigateToLoginScreen: () -> Unit) {
     Box(
         modifier = Modifier
             .fillMaxSize()
@@ -90,7 +90,7 @@ fun OnBoardingScreen() {
             }
 
             Button(
-                onClick = { },
+                onClick = { onNavigateToLoginScreen() },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(8.dp),
@@ -122,6 +122,8 @@ fun OnBoardingScreen() {
 @Composable
 @Preview(name = "onBoarding", showBackground = true)
 fun OnBoardingPreview(){
-    OnBoardingScreen()
+    OnBoardingHomeScreen {
+
+    }
 }
 

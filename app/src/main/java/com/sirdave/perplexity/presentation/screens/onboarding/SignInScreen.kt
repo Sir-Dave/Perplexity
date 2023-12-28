@@ -15,7 +15,7 @@ import com.sirdave.perplexity.R
 import com.sirdave.perplexity.ui.theme.DarkGreen
 
 @Composable
-fun SignInScreen(){
+fun SignInScreen(onContinueClick: () -> Unit){
     var email by remember { mutableStateOf("") }
 
     Column(
@@ -48,7 +48,7 @@ fun SignInScreen(){
         }
 
         Button(
-            onClick = { },
+            onClick = { onContinueClick() },
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(8.dp),
@@ -66,5 +66,5 @@ fun SignInScreen(){
 @Composable
 @Preview(name = "Sign In", showBackground = true)
 fun SignInPreview(){
-    SignInScreen()
+    SignInScreen{}
 }
