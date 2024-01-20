@@ -42,7 +42,7 @@ fun SubscriptionScreen() {
         modifier = Modifier
             .fillMaxSize()
             .paint(
-                painterResource(id = R.drawable.background_two),
+                painterResource(id = R.drawable.bg_seaside),
                 contentScale = ContentScale.FillHeight
             )
             .padding(8.dp)

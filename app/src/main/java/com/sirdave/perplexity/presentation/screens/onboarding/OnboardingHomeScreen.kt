@@ -23,7 +23,7 @@ fun OnBoardingHomeScreen(onNavigateToLoginScreen: () -> Unit) {
         modifier = Modifier
             .fillMaxSize()
             .paint(
-                painterResource(id = R.drawable.background_two),
+                painterResource(id = R.drawable.bg_seaside),
                 contentScale = ContentScale.FillHeight
             )
             .padding(8.dp)
@@ -56,7 +56,7 @@ fun OnBoardingHomeScreen(onNavigateToLoginScreen: () -> Unit) {
             ) {
 
                 Image(
-                    painter = painterResource(id = R.drawable.lubuntu_logo),
+                    painter = painterResource(id = R.drawable.perplexity),
                     contentDescription = null,
                     colorFilter = ColorFilter.tint(Color.White)
                 )
